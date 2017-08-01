@@ -1,0 +1,26 @@
+{
+    "cordova-plugin-whitelist": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-whitelist@1"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "com.example.hello": {
+        "source": {
+            "type": "local",
+            "path": "/Users/iherem/Downloads/cordova-plugin-hello"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "bridging": {
+        "source": {
+            "type": "local",
+            "path": "/Users/iherem/Downloads/Bridging Starter"
+        },
+        "is_top_level": true,
+        "variables": {}
+    }
+}

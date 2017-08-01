@@ -1,0 +1,21 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "com.example.hello": {
+            "PACKAGE_NAME": "mm.test.iherem"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "mm.test.iherem"
+        },
+        "bridging": {
+            "PACKAGE_NAME": "mm.test.iherem"
+        }
+    },
+    "dependent_plugins": {}
+}

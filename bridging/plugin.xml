@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin
+    xmlns="http://agentmate.io"
+    id="bridging"
+    version="3.0.0">
+    
+    <name>Bridging</name>
+    
+    <description>
+        This plugin use for private business
+    </description>
+    
+    <author>AppMan</author>
+    
+    <engines>
+        <engine name="cordova" version=">=3.0.0"/>
+    </engines>
+    
+    <js-module src="www/bridging.js" name="bridging">
+        <clobbers target="bridging"/>
+    </js-module>
+
+
+    <!-- ios -->
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="Bridging">
+                <param name="ios-package" onload="true" value="Bridging"/>
+            </feature>
+        </config-file>
+
+        <header-file src="src/ios/Bridging.h"/>
+        <source-file src="src/ios/Bridging.m"/>
+
+    </platform>
+    
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+        <feature name="Bridging">
+            <param name="android-package" value="mm.test.iherem.plugin"/>
+        </feature>
+        </config-file>
+
+        <source-file src="src/android/Bridging.java" target-dir="src/mm/test/iherem/plugin"/>
+    </platform>
+</plugin>
